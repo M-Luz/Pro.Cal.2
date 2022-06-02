@@ -1,0 +1,25 @@
+lista com os valores da conta
+conta = []
+
+Função que captura números
+cap_num função  (num) {
+    conta. empurrar (num)
+    documento. getElementById('conta'). innerText = conta. juntar(' ')
+}
+
+função que limpa a conta
+função limpa() {
+    conta = []
+    documento. getElementById('conta'). innerText = '0'
+}
+
+função que realiza o cálculo (se o cálculo para inválido, ela mostra uma mensagem de erro)
+função calcular() {
+    tentar {
+    documento. getElementById('conta'). innerText = eval(conta. juntar(''))
+    conta = []
+        } pegar (erro) {
+            documento. getElementById('conta'). innerText = 'E R R O' 
+            conta = []
+        }
+}
